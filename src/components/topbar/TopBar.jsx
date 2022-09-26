@@ -2,12 +2,12 @@
  * @Author: Mrasamu
  * @Date: 2022-09-24 20:23:25
  * @LastEditors: Mrasamu
- * @LastEditTime: 2022-09-24 22:41:21
+ * @LastEditTime: 2022-09-26 14:12:08
  * @description: file content
- * @FilePath: /mrasamu.github.io/src/topbar/TopBar.jsx
+ * @FilePath: /mrasamu.github.io/src/components/topbar/TopBar.jsx
  */
 import './topbar.css'
-
+import {Link} from 'react-router-dom'
 export default function TopBar() {
   return (
     <div className='top'>
@@ -19,11 +19,15 @@ export default function TopBar() {
         </div>
         <div className='topCenter'>
             <ul className='topList'>
-                <li className='topListItem'>HOME</li>
-                <li className='topListItem'>ABOUT</li>
-                <li className='topListItem'>CONTACT</li>
-                <li className='topListItem'>WRITE</li>
-                <li className='topListItem'>LOGOUT</li>
+                <li className='topListItem'>
+                  <Link to='/' className='link'>HOME</Link>
+                </li>
+                <li className='topListItem'>
+                  <Link to='/about' className='link'>ABOUT</Link>
+                </li>
+                <li className='topListItem'>
+                  <Link to='/posts' className='link'>POSTS</Link>
+                </li>
             </ul>
         </div>
         <div className='topRight'>
