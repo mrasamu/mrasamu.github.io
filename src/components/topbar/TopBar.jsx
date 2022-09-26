@@ -2,20 +2,27 @@
  * @Author: Mrasamu
  * @Date: 2022-09-24 20:23:25
  * @LastEditors: Mrasamu
- * @LastEditTime: 2022-09-26 14:12:08
+ * @LastEditTime: 2022-09-26 15:28:14
  * @description: file content
  * @FilePath: /mrasamu.github.io/src/components/topbar/TopBar.jsx
  */
 import './topbar.css'
 import {Link} from 'react-router-dom'
+import ReactTooltip from 'react-tooltip'
 export default function TopBar() {
   return (
     <div className='top'>
         <div className='topLeft'>
-        <i className="topIcon fa-brands fa-facebook-square"></i>
-        <i className="topIcon fa-brands fa-instagram-square"></i>
-        <i className="topIcon fa-brands fa-twitter-square"></i>
-        <i className="topIcon fa-brands fa-pinterest-square"></i>
+        <a data-tip data-for="githubTip" className="topIcon fa-brands fa-github" href='https://github.com/mrasamu'></a>
+        <ReactTooltip id="githubTip" place="top" effect="solid">
+        查看我的Github主页
+        </ReactTooltip>
+        <a data-tip data-for="blogTip"className="topIcon fa-solid fa-blog" href='https://blog.csdn.net/Mr_tea_milk'></a>
+        <ReactTooltip id="blogTip" place="top" effect="solid">
+        查看我的CSDN主页
+        </ReactTooltip>
+        {/* <i className="topIcon fa-brands fa-twitter-square"></i>
+        <i className="topIcon fa-brands fa-pinterest-square"></i> */}
         </div>
         <div className='topCenter'>
             <ul className='topList'>
@@ -33,8 +40,8 @@ export default function TopBar() {
         <div className='topRight'>
             <img 
               className='topImg'
-              src='https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' alt='' />
-            <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
+              src='https://s3.bmp.ovh/imgs/2022/09/26/96bba0a40163c9a5.jpg' alt='' />
+            <Link to='/posts' className='name' style={{textDecoration:"none"}}>Mr.Asamu</Link>
         </div>
     </div>
   )

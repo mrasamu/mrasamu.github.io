@@ -58,3 +58,11 @@
     cursor: pointer;
     margin-left: 15px;
 }
+
+.name{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: darkcyan;
+    font-family: 'Open Sans', sans-serif;
+}

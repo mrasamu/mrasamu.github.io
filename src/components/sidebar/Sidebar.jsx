@@ -2,12 +2,12 @@
  * @Author: Mrasamu
  * @Date: 2022-09-25 09:44:05
  * @LastEditors: Mrasamu
- * @LastEditTime: 2022-09-25 10:39:16
+ * @LastEditTime: 2022-09-26 15:45:10
  * @description: file content
- * @FilePath: /mrasamu.github.io/src/sidebar/Sidebar.jsx
+ * @FilePath: /mrasamu.github.io/src/components/sidebar/Sidebar.jsx
  */
 import './sidebar.css'
-
+import ReactTooltip from 'react-tooltip'
 export default function Sidebar() {
   return (
     <div className='sidebar'>
@@ -33,10 +33,15 @@ export default function Sidebar() {
         </div>
         <div className="sidebarSocial">
             <span className="sidebarTitle">FOLLOW US</span>
-            <i className="sidebarIcon fa-brands fa-facebook-square"></i>
-            <i className="sidebarIcon fa-brands fa-instagram-square"></i>
-            <i className="sidebarIcon fa-brands fa-twitter-square"></i>
-            <i className="sidebarIcon fa-brands fa-pinterest-square"></i>
+            <a data-tip data-for="githubTip" className="topIcon fa-brands fa-github" href='https://github.com/mrasamu'></a>
+        <ReactTooltip id="githubTip" place="top" effect="solid">
+        欢迎关注我的Github
+        </ReactTooltip>
+        <a data-tip data-for="blogTip"className="topIcon fa-solid fa-blog" href='https://blog.csdn.net/Mr_tea_milk'></a>
+        <ReactTooltip id="blogTip" place="top" effect="solid">
+        欢迎关注我的CSDN
+        </ReactTooltip>
+            
         </div>
     </div>
   )
