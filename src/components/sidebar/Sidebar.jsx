@@ -2,7 +2,7 @@
  * @Author: Mrasamu
  * @Date: 2022-09-25 09:44:05
  * @LastEditors: Mrasamu
- * @LastEditTime: 2022-09-26 15:45:10
+ * @LastEditTime: 2022-09-27 14:41:14
  * @description: file content
  * @FilePath: /mrasamu.github.io/src/components/sidebar/Sidebar.jsx
  */
@@ -15,12 +15,12 @@ export default function Sidebar() {
             <span className="sidebarTitle">
                 ABOUT ME
             </span>
-            <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <img src="https://s3.bmp.ovh/imgs/2022/09/27/7f89e1b5481cbdf7.jpg" alt="" />
+            <p className='pDesc'>
+                Mr.Asamu:某个大学生, 喜欢编程, 喜欢音乐，喜欢游戏，日常捣鼓一些东西。
             </p>
         </div>
-        <div className="sidebarItem">
+        {/* <div className="sidebarItem">
             <span className="sidebarTitle">CATEGORIES</span>
             <ul className="sidebarList">
                 <li className="sidebarListItem">Life</li>
@@ -30,7 +30,7 @@ export default function Sidebar() {
                 <li className="sidebarListItem">Tech</li>
                 <li className="sidebarListItem">Cinema</li>
             </ul>
-        </div>
+         </div> */}
         <div className="sidebarSocial">
             <span className="sidebarTitle">FOLLOW US</span>
             <a data-tip data-for="githubTip" className="topIcon fa-brands fa-github" href='https://github.com/mrasamu'></a>

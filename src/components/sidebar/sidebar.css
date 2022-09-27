@@ -60,3 +60,13 @@
     margin-left: 10px;
     cursor: pointer;
 }
+.pDesc{
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #555;
+    text-align: justify;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
